@@ -3,4 +3,4 @@
 
 - name: Asymworks Baseline | Restart rsyslog
   when: rsyslog_enabled
-  service: name=rsyslog state=restarted
+  ansible.builtin.service: name=rsyslog state=restarted
