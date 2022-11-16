@@ -18,6 +18,13 @@ syslog_port: 10514
 
 Whether the remote `syslog` server is enabled and installe.  If enabled, logs are sent in RFC3164 format via UDP to the specified server and port so they can be parsed by e.g. Logstash or Graylog.
 
+```yaml
+rsyslog_hostname: "{{ ansible_fqdn }}"
+rsyslog_preserve_fqdn: true
+```
+
+Sets the hostname that Rsyslog reports.  If this is unset, the Rsyslog default behavior will be used.  Set `rsyslog_preserve_fqdn` to `true` to have Rsyslog preserve the FQDN of the host, otherwise the short hostname will be sent.
+
 ## Role Facts
 
 None

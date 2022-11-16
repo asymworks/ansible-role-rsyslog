@@ -13,6 +13,12 @@ $FileCreateMode 0640
 $DirCreateMode 0755
 $Umask 0022
 
+# Setup Hostname
+{% if rsyslog_hostname -%}
+$LocalHostName {{ rsyslog_hostname }}
+{%- endif %}
+$PreserveFQDN {{ 'on' if rsyslog_preserve_fqdn else 'off' }}
+
 #### Modules ####
 
 # Provides --MARK-- message capability.

@@ -5,3 +5,6 @@
 rsyslog_enabled: true
 rsyslog_server: logs.lan
 rsyslog_port: 10514
+
+rsyslog_hostname: 
+rsyslog_preserve_fqdn: true
