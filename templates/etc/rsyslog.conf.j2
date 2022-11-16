@@ -16,7 +16,7 @@ $Umask 0022
 # Setup Hostname
 {% if rsyslog_hostname -%}
 $LocalHostName {{ rsyslog_hostname }}
-{%- endif %}
+{% endif %}
 $PreserveFQDN {{ 'on' if rsyslog_preserve_fqdn else 'off' }}
 
 #### Modules ####
