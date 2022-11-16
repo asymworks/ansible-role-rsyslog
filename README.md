@@ -23,7 +23,7 @@ rsyslog_hostname:
 rsyslog_preserve_fqdn: true
 ```
 
-Sets the hostname that Rsyslog reports.  If this is unset, the Rsyslog default behavior will be used.  Set `rsyslog_preserve_fqdn` to `true` to have Rsyslog preserve the FQDN of the host, otherwise the short hostname will be sent.
+Sets the hostname that Rsyslog reports.  If this is unset (the default), the Rsyslog default behavior will be used.  Set `rsyslog_preserve_fqdn` to `true` to have Rsyslog preserve the FQDN of the host, otherwise the short hostname will be sent.
 
 ## Role Facts
 
